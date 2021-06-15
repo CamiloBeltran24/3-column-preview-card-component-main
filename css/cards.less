@@ -1,0 +1,46 @@
+.cards-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 375px;
+  margin: 25px auto;
+  border-radius: 10px;
+  .card {
+    .card-dimensions;
+    &__title {
+      width: 100%;
+      text-align: left;
+      .text;
+      .title;
+    }
+    &__text-content {
+      .text;
+    }
+    &__button {
+      .button;
+    }
+  }
+  .orange {
+    background-color: @bright-orange;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    .card__button {
+      color: @bright-orange;
+    }
+  }
+  .blue {
+    background-color: @Dark-cyan;
+    .card__button {
+      color: @Dark-cyan;
+    }
+  }
+  .green {
+    background-color: @Very-dark-cyan;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .card__button {
+      color: @Very-dark-cyan;
+    }
+  }
+}

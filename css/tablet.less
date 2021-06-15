@@ -1,0 +1,33 @@
+@media screen {
+  @media (min-width: 1024px) {
+    .cards-container {
+      justify-content: center;
+      align-items: center;
+      width: 99%;
+      max-width: 1440px;
+      height: 95vh;
+      margin: auto;
+      padding: 55px;
+      .card {
+        width: 33.333%;
+        padding: 60px;
+        // height: 100%;
+        &__button {
+          margin-top: 40px;
+        }
+        &__button:hover {
+          background: none;
+          color: @Transparent-white;
+        }
+      }
+      .orange {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+      }
+      .green {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+-var texto_boton = "Learn More";
+-var subtitulos = ['Sedans','SUVs','Luxury']
+-var text_cards = ['Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.','Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.','Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.']
+-var ruta_imagen = ['images/icon-sedans.svg', 'images/icon-suvs.svg', 'images/icon-luxury.svg']
+-var back_class = ['orange','blue','green']
+
+mixin card(title, text_content, button_text, image, clase )
+    div(class= clase + ' card') 
+      .card__image: img(src= image, alt="Imagen carro")
+      .card__title: h2= title
+      .card__text-content: p= text_content
+      a.card__button(href="#")= button_text 
